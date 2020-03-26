@@ -1,0 +1,24 @@
+{% extends "layouts/layout.html" %}
+
+{% block header %}
+<div class="bg-gray-light border-bottom border-gray-light">
+  <div class="container text-center py-5 mb-4">
+    <div class="mt-3 mb-4">
+      <h1 class="h1 mb-0">About</h1>
+      <h2 class="h4 text-gray font-weight-light">
+		About Mapping Self-Harm Risk
+	  </h2>
+    </div>
+  </div>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="text-gray-light text-center py-5 my-5">
+  <p class="lead">
+  This project uses an LSTM and a CNN to identify suicidal language in tweets.
+  </p>  
+  <p class="lead">
+  The location of any flagged tweets is mapped using ArcGIS geocding, and a heatmap is generated using Google Maps Visualzation.
+  </p>
+{% endblock %}
